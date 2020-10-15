@@ -4,18 +4,18 @@ task :hello do
   puts "hello from Rake!"
 end
 desc 'outputs halo to the terminal'
-task :hola do 
+task :hola do
   puts "hola from Rake!"
-end 
+end
 end
 namespace :db do
   desc 'environment initalization'
-  task :migrate => :environment do 
+  task :migrate => :environment do
     Student.create_table
   end
-  task :environment do 
+  task :environment do
     require_relative './config/environment'
-  end 
+  end
   desc "seed db "
   task :seed  do
     require_relative './db/seeds.rb'
