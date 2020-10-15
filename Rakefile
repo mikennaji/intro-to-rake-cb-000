@@ -5,7 +5,7 @@ task :hello do
 end
 desc 'outputs halo to the terminal'
 task :hola do
-  puts "hola from Rake!"
+  puts "hola de Rake!"
 end
 end
 namespace :db do
